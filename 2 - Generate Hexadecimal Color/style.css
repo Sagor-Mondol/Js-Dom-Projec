@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  text-align: center;  
+}
+
+.container h1{
+  font-size: 25px;
+}
+
+#chang-button{
+  padding: 10px 15px;
+  font-size: 15px;
+  border: none;
+  background-color: aqua;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+#chang-button:hover{
+  background-color: brown;
+  color: #fff;
+  scale: 1.1;
+}
+
+#output{
+  width: 250px;
+  padding: 10px;
+  font-size: 15px;
+}
