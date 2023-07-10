@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text auto typing - Sagor Coding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <h1>I,am a <span class="auto-text"></span> </h1>
+    </div>
+
+    <!--Javascript-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+         var typed = new Typed('.auto-text', {
+         strings: ['Full Stack Developer', 'Freelancer', 'Video Editor','Seo Expert'],
+         typeSpeed: 150,
+         backSpeeed: 150,
+         loop:true
+        });
+    </script>
+</body>
+</html>
