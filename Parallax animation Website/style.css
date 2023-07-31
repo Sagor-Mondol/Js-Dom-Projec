@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #f9f9f9;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #359381;
+    pointer-events: none;
+    font-weight: 600;
+    margin-right: 200px;
+}
+
+.navgationbar a{
+    text-decoration: none;
+    color: #359381;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.navgationbar a:hover,.navgationbar a.active{
+    background: #359381;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+#text{
+    font-size: 5em;
+    color: #fff;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgb(0,0,0, .2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sea{
+    background: #003329;
+    padding: 100px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.sea h2{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sea p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
