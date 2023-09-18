@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling | Sagor coding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <!--parallax-->
+    <section class="parallax">
+         <h2 id="text">Parallax Website</h2>
+         <img src="img/monutain_01.png" id="monutain">
+         <img src="img/trees_02.png" id="trees2">
+         <img src="img/monutain_02.png" id="monutain2">
+         <img src="img/trees_01.png" id="trees1">
+         <img src="img/man.png" id="man">
+         <img src="img/plants.png" id="plants">
+    </section>
+    <!--About-->
+    <section class="about">
+          <h2>Parallax Scrolling Website</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure sit explicabo earum 
+            nam hic consequuntur similique minima, sequi iusto, nobis quam maiores perferendis? Eaque, 
+            exercitationem, id maiores sint, ad nisi nesciunt excepturi adipisci aut animi reiciendis 
+            voluptatum deserunt fuga velit in omnis saepe vero deleniti eos reprehenderit aliquam! Ipsum 
+            earum veritatis laboriosam exercitationem suscipit voluptate porro. Ipsa reprehenderit excepturi
+             veniam, quis laboriosam sint odio obcaecati voluptas similique non alias. Dolore iure tenetur 
+             minus molestiae atque officia, eos adipisci quisquam autem, consequuntur rerum non dignissimos
+              temporibus reiciendis amet sit! Voluptatum provident nam consequuntur fuga architecto ipsum
+               eos quos? Repudiandae recusandae impedit, unde inventore sed odit expedita quisquam quae, 
+               mollitia dignissimos accusamus sit minus eligendi accusantium libero sint? Natus ea, tempora
+                quos fugiat atque expedita vero voluptates voluptas!
+            <br> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure sit explicabo earum 
+            nam hic consequuntur similique minima, sequi iusto, nobis quam maiores perferendis? Eaque, 
+            exercitationem, id maiores sint, ad nisi nesciunt excepturi adipisci aut animi reiciendis 
+            voluptatum deserunt fuga velit in omnis saepe vero deleniti eos reprehenderit aliquam! Ipsum 
+            earum veritatis laboriosam exercitationem suscipit voluptate porro. Ipsa reprehenderit excepturi
+             veniam, quis laboriosam sint odio obcaecati voluptas similique non alias. Dolore iure tenetur 
+             minus molestiae atque officia, eos adipisci quisquam autem, consequuntur rerum non dignissimos
+              temporibus reiciendis amet sit! Voluptatum provident nam consequuntur fuga architecto ipsum
+               eos quos? Repudiandae recusandae impedit, unde inventore sed odit expedita quisquam quae, 
+               mollitia dignissimos accusamus sit minus eligendi accusantium libero sint? Natus ea, tempora
+                quos fugiat atque expedita vero voluptates voluptas!
+            <br> <br>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure sit explicabo earum 
+            nam hic consequuntur similique minima, sequi iusto, nobis quam maiores perferendis? Eaque, 
+            exercitationem, id maiores sint, ad nisi nesciunt excepturi adipisci aut animi reiciendis 
+            voluptatum deserunt fuga velit in omnis saepe vero deleniti eos reprehenderit aliquam! Ipsum 
+            earum veritatis laboriosam exercitationem suscipit voluptate porro. Ipsa reprehenderit excepturi
+             veniam, quis laboriosam sint odio obcaecati voluptas similique non alias. Dolore iure tenetur 
+             minus molestiae atque officia, eos adipisci quisquam autem, consequuntur rerum non dignissimos
+              temporibus reiciendis amet sit! Voluptatum provident nam consequuntur fuga architecto ipsum
+               eos quos? Repudiandae recusandae impedit, unde inventore sed odit expedita quisquam quae, 
+               mollitia dignissimos accusamus sit minus eligendi accusantium libero sint? Natus ea, tempora
+                quos fugiat atque expedita vero voluptates voluptas!
+            <br> <br>
+            </p>
+    </section>
+
+    <!--Javascript-link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>       
+    gsap.from('#monutain', {
+      scrollTrigger : {
+        scrub : true
+        },
+       y: 100,
+     });
+
+     gsap.from('#monutain2', {
+      scrollTrigger : {
+        scrub : true
+        },
+       y: 50,
+     });
+
+     gsap.from('#trees2', {
+      scrollTrigger : {
+        scrub : true
+        },
+       x: -50,
+     });
+
+     gsap.from('#trees1', {
+      scrollTrigger : {
+        scrub : true
+        },
+       x: 50,
+     });
+
+     
+
+     gsap.from('#man', {
+      scrollTrigger : {
+        scrub : true
+        },
+       x: -200,
+     });
+
+     gsap.from('#plants', {
+      scrollTrigger : {
+        scrub : true
+        },
+       x: -50,
+     });
+
+     gsap.from('#text', {
+      scrollTrigger : {
+        scrub : true
+        },
+       x: 400,
+     });
+
+    </script>
+</body>
+</html>
