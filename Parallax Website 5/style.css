@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+.home{
+    background-image: url(img/img.2.png);
+    background-size: cover;
+    background-position: 0px -120px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h1{
+    color: black;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.home img{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+@keyframes loadAnimation {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes beforeAnimation {
+    0%{
+        transform: translateX(-100%);
+        width: 0%;
+    }
+    100%{
+        transform: translateX(0%);
+        width: 100%;
+    }
+}
+header nav{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 30px 100px;
+    font-size: 20px;
+    animation: loadAnimation 2s;
+    z-index: 1;
+}
+header nav span{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav span a{
+    text-decoration: none;
+    position: relative;
+}
+header nav span a::before{
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 2.5px;
+    animation: beforeAnimation .5s;
+    display: none;
+    position: absolute;
+    border-radius:20px;
+    bottom: -5px;
+}
+header nav span a:hover::before{
+    display: unset;
+}
+.about{
+    background-color: rgb(84, 192, 255);
+    padding: 0px 100px;
+    min-height: 100vh;
+    font-size: 20px;
+}
+.about h1{
+    padding-top: 40px;
+}
+.about p{
+    padding: 35px 0px;
+}
+.active{
+    color: black;
+}
+.active::before{
+    background-color: black;
+    display: unset;
+}
